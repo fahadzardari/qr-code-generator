@@ -1,14 +1,17 @@
 {
   "name": "qr-code",
-  "private": true,
+  "homepage": "https://fahadzardari.github.io/qr-code-generator/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "html2canvas": "^1.4.1",
     "qrcode": "^1.5.1",
     "qrcode.js": "^0.0.1",
